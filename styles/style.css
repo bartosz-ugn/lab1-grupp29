@@ -1,0 +1,181 @@
+.bar{
+    background-color:black;
+    overflow: hidden;
+    width:100%;
+    border: solid black 5px;
+    position: fixed;
+    z-index: 11;
+    top:0;
+    left:0;
+}
+.bar a{
+    float:left;
+    text-align:center;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-family:lato;
+    color:white;
+    text-decoration: none;
+}
+.bar .active{
+    background-color: #564caf;
+    color:white;
+}
+.bar a:hover{
+    background-color:#968fd4;
+    color:black;
+}
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image:linear-gradient(#4b4b69, #b3abab,#464657);
+    width:980px;
+}
+header{
+    text-align:center;
+    color:white;
+    font-size:20px;
+    font-family:lato;
+    position: relative;
+    top: 45px;
+}
+footer{
+    padding:20px;
+    background: rgb(70, 70, 87);
+    position:relative;
+    border: solid 3px black;
+    top:40px;
+}
+.footer{
+    display:inline-block;
+    margin:0 20px;
+    width:auto;
+    font-family: lato;
+}
+.footer a{
+    text-decoration: none;
+    color:white;
+}
+.anonserbild{
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.anonsh{
+    text-align: center;
+    font-family: lato;
+}
+*{
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    position: relative;
+    top:45px;
+}
+main{
+    flex: 80%;
+    padding: 20px;
+    background-color: #4b4b69; 
+    border: solid 3px black;
+}
+main h2{
+    text-align:center;
+}
+aside{
+    flex: 20%;
+    padding:20px;
+    background-color: rgb(179, 171, 171);  
+    border: solid 3px black;
+    border-left: 0px;
+}
+label{
+    color:white;
+    font-family:lato;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    padding:20px;
+}
+iframe{
+    display: block;
+    margin:0 auto;
+}
+.kontaktaosstext{
+    color:white;
+    font-family:lato;
+    font-size: 30px;
+    text-align:center;
+    padding-bottom:1px;
+}
+#mail{
+    text-decoration:none;
+    color:white;
+}
+#mail:hover{
+    color:teal;
+}
+.openinghours, th, td{
+    color:white;
+    font-family:lato;
+    border: 2px solid rgba(255, 255, 255, 0.699);
+    padding:15px;
+    text-align:center;
+    border-spacing: 5px;
+    background-color:rgba(0, 0, 0, 0.336);
+    border-collapse:collapse;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.openinghours{
+    width:70%;
+}
+.kontaktm{
+    color:white;
+    font-family:lato;
+    font-size:20px;
+    text-align:left;
+}
+.objekt,.objektindex2{
+    border:solid 3px;
+    background-color:rgb(162, 157, 179);
+    display:flex;
+    border-radius:10px;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+.objekt:hover{
+    border-color:aquamarine;
+    background-color:rgb(195, 190, 212);
+}
+.fordonbild{
+    width: 300px;
+    height: 200px;
+    margin:10px;
+}
+.fordontext{
+    display:inline-block;
+    vertical-align: top;
+    margin:10px;
+    font-family:lato; 
+}
+h1{
+    color:rgb(218, 224, 135);
+    font-family:fantasy;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 2px black;
+}
+a:hover{
+    color:teal;
+}
+.forslink{
+    color:rgb(179, 171, 171);
+    text-decoration:none;
+}
+.forslink p{
+    text-align:center;
+}

@@ -1,0 +1,111 @@
+<!--Startsida--> 
+<!DOCTYPE html>
+<html lang="sv">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KAU Bilhandel AB</title>
+    <link rel="stylesheet" href="styles/style.css">
+ </head>
+ 
+    <body> 
+        <!--Navigation bar som är fast på toppen av sidan-->
+        <nav class="bar">
+            <a class="active" href="index.html">Startsida</a>
+            <a href="https://www.kau.se/" target="_blank">Fordon</a>
+            <a href="index3.html">Kontakta oss</a>
+        </nav>
+        <br>
+        <!--företags logo-->
+        <header>
+            <h1>KAU Bilhandel AB</h1>
+            <img src="images/carlogo.png" alt="bild" width="200" style="position:relative">
+        </header>
+            
+        <div class="row">
+
+            <main>
+                <!--karta från google maps-->
+                <div class="karta">
+                    <label>Hitta oss här: </label><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8122.3968373743965!2d13.582588!3d59.40639900000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d3afe475254bf1e!2sKarlstads%20Universitet!5e0!3m2!1ssv!2sse!4v1611846094028!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+                <!-- 3 clickbara försäljningsobjekter-->
+                <!--1-->
+                <label style="font-family:lato;color:white;padding:30px">Vi säljer:</label>
+
+                <div  class="objekt" onclick="location.href='index2.html';" style="cursor: pointer;">
+                    <div style="display: inline-block;">
+                        <img src="images/auto-2179220_640.jpg" alt="bil" class="fordonbild">
+                    </div>
+                    <div class="fordontext">
+                            <h2>Bilar</h2>
+                            <p><strong>Lorem</strong> ipsum dolor sit amet, consectetuer adipiscing elit.
+                                <i>Aenean</i> commodo ligula eget dolor. Aenean massa.
+                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.                               
+                            </p>
+                    </div>
+                </div>   
+                <a class="forslink" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.5992104413858!2d13.580399316075434!3d59.4063989816859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb12dfeb2f6e3%3A0x4d3afe475254bf1e!2sKarlstads%20Universitet!5e0!3m2!1ssv!2sse!4v1611840668673!5m2!1ssv!2sse" target="_blank"><p>Bilar - Försäljningsplats</p></a>
+                <!--2--> 
+                <div class="objekt" onclick="location.href='index.html';" style="cursor: pointer;">
+                    <div style="display: inline-block;">
+                        <img src="images/husbil.jpg" alt="bil" class="fordonbild">
+                    </div>
+                    <div class="fordontext">
+                            <h2>Husbilar</h2>
+                            <p><strong>Lorem</strong> ipsum dolor sit amet, consectetuer adipiscing elit.
+                                <i>Aenean</i> commodo ligula eget dolor. Aenean massa.
+                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                    </div>
+                </div>
+                <a class="forslink" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.5992104413858!2d13.580399316075434!3d59.4063989816859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb12dfeb2f6e3%3A0x4d3afe475254bf1e!2sKarlstads%20Universitet!5e0!3m2!1ssv!2sse!4v1611840668673!5m2!1ssv!2sse" target="_blank"><p>Husbilar - Försäljningsplats</p></a>
+                <!--3--> 
+                <div  class="objekt" onclick="location.href='index.html';" style="cursor: pointer;">
+                    <div style="display: inline-block;">
+                        <img src="images/motor.jpg" alt="bil" class="fordonbild"> 
+                    </div>
+                    <div class="fordontext">
+                            <h2>Motorcyklar</h2>
+                            <p><strong>Lorem</strong> ipsum dolor sit amet, consectetuer adipiscing elit.
+                                <i>Aenean</i> commodo ligula eget dolor. Aenean massa.
+                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                    </div>
+                </div>
+                <a class="forslink" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.5992104413858!2d13.580399316075434!3d59.4063989816859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb12dfeb2f6e3%3A0x4d3afe475254bf1e!2sKarlstads%20Universitet!5e0!3m2!1ssv!2sse!4v1611840668673!5m2!1ssv!2sse" target="_blank"><p>Motorcyclar - Försäljningsplats</p></a>
+            </main>
+    
+            <aside>
+                <!--Reklam delen-->
+                <h2 class="anonsh" >Anonser</h2>
+                <div>
+                    <a href="https://www.kau.se/" target="_blank">
+                    <img src="images/smartphone-4076145_960_720.png" alt="Reklam"  class="anonserbild">
+                    </a>
+                </div>
+                <br><br><br>
+                <div>
+                    <a href="https://www.kau.se/" target="_blank">
+                    <img src="images/car1.jpg" alt="Reklam"  class="anonserbild">
+                    </a>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            <!--Botten av sidan-->
+            <h2 class="footer">
+                <a href="https://www.kau.se/" target="_blank">Betalning</a>
+            </h2>
+            <h2 class="footer">
+                <a href="https://www.kau.se/" target="_blank">Om oss</a>
+            </h2>
+        </footer>
+    
+
+    </body>
+
+</html> 
