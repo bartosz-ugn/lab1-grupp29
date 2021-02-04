@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .bar{
     background-color:black;
     overflow: hidden;
@@ -25,6 +26,52 @@
     background-color:#968fd4;
     color:black;
 }
+
+/*dropdown meny*/
+.dropdown {
+    /*float: left;
+    overflow: hidden;
+    */
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropdown-button {
+    font-size: 20px;
+    font-family:lato;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 25px;
+    background-color: inherit;
+}
+
+.dropdown-items {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 12;
+}
+
+.dropdown-items a {
+    float: none;
+    text-align: center;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-family: lato;
+    color:white;
+    text-decoration: none;
+}
+
+.dropdown-items a:hover {
+    background-color:#968fd4;
+}
+
+.dropdown:hover .dropdown-items {
+    display: block;
+}
+
 body {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -33,9 +80,6 @@ body {
 }
 header{
     text-align:center;
-    color:white;
-    font-size:20px;
-    font-family:lato;
     position: relative;
     top: 45px;
 }
@@ -63,10 +107,10 @@ footer{
     margin-left: auto;
     margin-right: auto;
 }
-.anonsh{
+/*.anonsh{
     text-align: center;
     font-family: lato;
-}
+}*/
 *{
     box-sizing: border-box;
 }
@@ -76,7 +120,7 @@ footer{
     top:45px;
 }
 main{
-    flex: 80%;
+    flex: 70%;
     padding: 20px;
     background-color: #4b4b69; 
     border: solid 3px black;
@@ -85,19 +129,27 @@ main h2{
     text-align:center;
 }
 aside{
-    flex: 20%;
+    flex: 30%;
     padding:20px;
     background-color: rgb(179, 171, 171);  
     border: solid 3px black;
     border-left: 0px;
 }
-label{
+main>label{
     color:white;
     font-family:lato;
     font-size: 30px;
     display: block;
     text-align: center;
     padding:20px;
+}
+#hoh{
+    font-family:lato;
+    color:white;
+     text-align:center; 
+     font-size:30px;
+      display:block;
+      padding:20px;
 }
 iframe{
     display: block;
@@ -163,11 +215,12 @@ iframe{
     margin:10px;
     font-family:lato; 
 }
-h1{
+header>h1{
     color:rgb(218, 224, 135);
     font-family:fantasy;
     letter-spacing: 1px;
     -webkit-text-stroke: 2px black;
+    font-size:40px;
 }
 a:hover{
     color:teal;
@@ -178,4 +231,72 @@ a:hover{
 }
 .forslink p{
     text-align:center;
+}
+
+
+
+
+.anonserbild{
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
+    border:solid 2px silver;
+}
+aside>h1{
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+}
+fieldset{
+    border: 3px solid;
+    border-radius:10px;
+    font-family: 'Roboto', sans-serif;
+    background-color:rgb(162, 157, 179); 
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
+}
+.radiobutton{
+    display:block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+#radioid,#KKKK,textarea, select
+ {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding:10px;
+  border: 1px solid rgb(17, 5, 5);
+  border-radius: 5px;
+  background-color:  rgb(218, 218, 218);
+}
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+#radioid:focus,#KKKK:focus,textarea:focus, select:focus
+ {
+     border-color:rgb(6, 128, 250);
+     outline:none;
+     box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.5);
+ }
+/*buttons*/
+button{
+    font-family:inherit;
+    padding:10px;
+    border:none;
+    color:white;
+    border-radius:9999px;
+    background-color:rgb(212, 75, 75);
+    margin-bottom:10px;
+    cursor:pointer;
+    font-weight: bold;
+}
+button[type="submit"]{
+    background-color:rgb(65, 189, 211);
+    float:right;
+}
+button:hover{
+    background-color:rgb(146, 55, 55);
+}
+button[type="submit"]:hover{
+    background-color:rgb(47, 136, 151);
 }

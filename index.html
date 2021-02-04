@@ -4,8 +4,9 @@
  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>KAU Bilhandel AB</title>
+    <title>KAU Bilhanddel AB</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
  </head>
  
     <body> 
@@ -14,6 +15,16 @@
             <a class="active" href="index.html">Startsida</a>
             <a href="https://www.kau.se/" target="_blank">Fordon</a>
             <a href="index3.html">Kontakta oss</a>
+            <a href="https://www.kau.se/" target="_blank">Betalning</a>
+            <a href="https://www.kau.se/" target="_blank">Om oss</a>
+            <!--knapp för dropdown meny-->
+            <div class="dropdown">
+                <button class="dropdown-button">item title</button>
+                <div class="dropdown-items">
+                    <a href="index3.html">Kontakta oss</a>
+                    
+                </div>
+            </div>
         </nav>
         <br>
         <!--företags logo-->
@@ -27,13 +38,13 @@
             <main>
                 <!--karta från google maps-->
                 <div class="karta">
-                    <label>Hitta oss här: </label><br>
+                    <label id="hoh">Hitta oss här: </label><br>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8122.3968373743965!2d13.582588!3d59.40639900000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d3afe475254bf1e!2sKarlstads%20Universitet!5e0!3m2!1ssv!2sse!4v1611846094028!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
                     </iframe>
                 </div>
                 <!-- 3 clickbara försäljningsobjekter-->
                 <!--1-->
-                <label style="font-family:lato;color:white;padding:30px">Vi säljer:</label>
+                <label style="font-family:lato;color:rgb(86, 206, 0);padding:30px">Vi säljer:</label>
 
                 <div  class="objekt" onclick="location.href='index2.html';" style="cursor: pointer;">
                     <div style="display: inline-block;">
@@ -79,20 +90,93 @@
             </main>
     
             <aside>
-                <!--Reklam delen-->
-                <h2 class="anonsh" >Anonser</h2>
-                <div>
-                    <a href="https://www.kau.se/" target="_blank">
-                    <img src="images/smartphone-4076145_960_720.png" alt="Reklam"  class="anonserbild">
-                    </a>
-                </div>
-                <br><br><br>
-                <div>
-                    <a href="https://www.kau.se/" target="_blank">
-                    <img src="images/car1.jpg" alt="Reklam"  class="anonserbild">
-                    </a>
-                </div>
+                <!--formulär-->
+                <h1>Skicka ett formulär så kontaktar vi dig!</h1>
+                <form>
+                    <fieldset>
+                        <legend><b>Formulär</b></legend>
+                        
+                        <div class="falt">
+                            <label for="name">Namn:</label>
+                            <input id="name" type="text" required placeholder="Förnamn och efternamn">
+                        </div>
+                        <br>
+                        <div class="falt">  
+                            <label for="radioid">Vilket typ av fordon är du intresserad av?:</label> 
+                            <div id="radioid">                                                     
+                                <span class="radiobutton">
+                                    <input id="bil" type="radio" name="fordonval">
+                                    <label for="bil">Bil</label>
+                                </span>
+                                <span class="radiobutton">
+                                    <input id="husbil" type="radio" name="fordonval">
+                                    <label for="bil">Husbil</label>
+                                </span>
+                                <span class="radiobutton">
+                                    <input id="motc" type="radio" name="fordonval">
+                                    <label for="bil">Motorcykel</label>
+                                </span>
+                            </div>  
+                        </div>
+                        <br>
+                        <div class="falt">
+                            
+                            <label for="model">Välj en färg:</label>
+                            <br>
+                            <select id="model" required>
+                                <option>Svart</option>
+                                <option>Vit</option>
+                                <option>Blå</option>
+                                <option>Röd</option>
+                                <option>Silver</option>
+                                <option>Brun</option>
+                                <option>Grön</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="falt">
+                            <label for="KKKK">KKKKKK</label>
+                            <div id="KKKK">                               
+                                <input id="check" type="checkbox">
+                                <label for="check">ZZZ</label>
+                                <input id="check" type="checkbox">
+                                <label for="check">YYY</label>
+                                <input id="check" type="checkbox">
+                                <label for="check">XXX</label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="falt">
+                            <label for="telnum">Telefonnummer:</label>
+                            <input type="tel" id="telnum" required placeholder="+46 12 345 67 89">
+                        </div>
+                        <br>
+                        <div class="falt">
+                            <label for="email">E-post:</label>
+                            <input type="email" id="email" placeholder="namn@example.com">
+                        </div>
+                        <br>
+                        <div class="falt">
+                            <label for="txtarea">Övrigt:</label>
+                            <textarea id="txtarea" rows="10"></textarea>
+                        </div>
+                        <br>
+
+                        <button type="reset">Rensa <i class="fas fa-skull"></i></button>
+                        <button type="submit">Skicka <i class="far fa-file-alt"></i></button>
+                        
+
+                    </fieldset>
+                </form>
+                 <!--Reklam delen-->
+                 <br><br><br>
+                 <div>
+                     <a href="https://www.kau.se/" target="_blank">
+                     <img src="images/car1.jpg" alt="Reklam"  class="anonserbild">
+                     </a>
+                 </div>
             </aside>
+
         </div>
 
         <footer>
