@@ -10,31 +10,30 @@
  </head>
  
     <body> 
-        <!--Navigation bar som är fast på toppen av sidan-->
-        <nav class="bar">
-            <a class="active" href="index.html">Startsida</a>
-            <a href="https://www.kau.se/" target="_blank">Fordon</a>
-            <a href="index3.html">Kontakta oss</a>
-            <a href="https://www.kau.se/" target="_blank">Betalning</a>
-            <a href="https://www.kau.se/" target="_blank">Om oss</a>
-            <!--knapp för dropdown meny-->
-            <div class="dropdown">
-                <button class="dropdown-button">item title</button>
-                <div class="dropdown-items">
-                    <a href="index3.html">Kontakta oss</a>
-                    
-                </div>
-            </div>
+        <!--Navigation bar som är fast på toppen av sidan-->   
+        <nav>
+            <ul class="bar">
+                <li><a class="active" href="index.html">Startsida <i class="fas fa-home"></i></a></li>
+                <li><a href="index2.html" >Bilar <i class="fas fa-car"></i></a>
+                    <ul>
+                        <li><a>Commodo conseq</a></li>
+                        <li><a>Voluptate velit</a></li>
+                        <li><a>Esse cillum</a></li>
+                        <li><a>Deserunt mollit</a></li>
+                    </ul>
+                </li>
+                <li><a href="" >Husbilar <i class="fas fa-caravan"></i></a>
+                <li><a href="" >Motorcyclar <i class="fas fa-motorcycle"></i></a>
+                <li><a href="index3.html">Kontakta oss <i class="fas fa-phone-alt"></i></a></li>               
+            </ul>
         </nav>
-        <br>
-        <!--företags logo-->
+        <!--header med logo-->
         <header>
             <h1>KAU Bilhandel AB</h1>
             <img src="images/carlogo.png" alt="bild" width="200" style="position:relative">
         </header>
             
         <div class="row">
-
             <main>
                 <!--karta från google maps-->
                 <div class="karta">
@@ -44,7 +43,7 @@
                 </div>
                 <!-- 3 clickbara försäljningsobjekter-->
                 <!--1-->
-                <label style="font-family:lato;color:rgb(86, 206, 0);padding:30px">Vi säljer:</label>
+                <label style="font-family:lato;color:rgb(255, 255, 255);padding:30px">Vi säljer:</label>
 
                 <div  class="objekt" onclick="location.href='index2.html';" style="cursor: pointer;">
                     <div style="display: inline-block;">
@@ -95,12 +94,13 @@
                 <form>
                     <fieldset>
                         <legend><b>Formulär</b></legend>
-                        
+                        <!--namn-->
                         <div class="falt">
                             <label for="name">Namn:</label>
                             <input id="name" type="text" required placeholder="Förnamn och efternamn">
                         </div>
                         <br>
+                        <!--radiobuttons-->
                         <div class="falt">  
                             <label for="radioid">Vilket typ av fordon är du intresserad av?:</label> 
                             <div id="radioid">                                                     
@@ -119,62 +119,74 @@
                             </div>  
                         </div>
                         <br>
-                        <div class="falt">
-                            
-                            <label for="model">Välj en färg:</label>
+                        <!--select-->
+                        <div class="falt">                           
+                            <label for="model">Modellår:</label>
                             <br>
                             <select id="model" required>
-                                <option>Svart</option>
-                                <option>Vit</option>
-                                <option>Blå</option>
-                                <option>Röd</option>
-                                <option>Silver</option>
-                                <option>Brun</option>
-                                <option>Grön</option>
+                                <option>Nya fordon</option>
+                                <option>2019-2016</option>
+                                <option>2015-2010</option>
+                                <option>2009-2005</option>
+                                <option>2004-2000</option>
+                                <option>1999-1990</option>
+                                <option>1990-</option>
                             </select>
                         </div>
                         <br>
+                        <!--checkboxes-->
                         <div class="falt">
-                            <label for="KKKK">KKKKKK</label>
-                            <div id="KKKK">                               
+                            <label for="fargcheckbox">Välj färgen:</label>
+                            <div id="fargcheckbox">   
                                 <input id="check" type="checkbox">
-                                <label for="check">ZZZ</label>
+                                <label for="check">Svart</label>
                                 <input id="check" type="checkbox">
-                                <label for="check">YYY</label>
+                                <label for="check">Vit</label>
+                                <div>
                                 <input id="check" type="checkbox">
-                                <label for="check">XXX</label>
+                                <label for="check">Silver/Grå</label>
+                                <input id="check" type="checkbox">
+                                <label for="check">Röd</label>
+                                </div>
+                                <input id="check" type="checkbox">
+                                <label for="check">Brun</label>
+                                <input id="check" type="checkbox">
+                                <label for="check">Blå</label>
+                                <input id="check" type="checkbox">
+                                <label for="check">Grön</label>
                             </div>
                         </div>
                         <br>
+                        <!--telefonnummer-->
                         <div class="falt">
                             <label for="telnum">Telefonnummer:</label>
                             <input type="tel" id="telnum" required placeholder="+46 12 345 67 89">
                         </div>
                         <br>
+                        <!--epost-->
                         <div class="falt">
                             <label for="email">E-post:</label>
                             <input type="email" id="email" placeholder="namn@example.com">
                         </div>
                         <br>
+                        <!--ovrig info-->
                         <div class="falt">
                             <label for="txtarea">Övrigt:</label>
-                            <textarea id="txtarea" rows="10"></textarea>
+                            <textarea id="txtarea" rows="10" placeholder="Övrig information"></textarea>
                         </div>
                         <br>
-
+                        <!--Buttons-->
                         <button type="reset">Rensa <i class="fas fa-skull"></i></button>
                         <button type="submit">Skicka <i class="far fa-file-alt"></i></button>
-                        
-
                     </fieldset>
                 </form>
                  <!--Reklam delen-->
-                 <br><br><br>
-                 <div>
+                <br><br><br>
+                <div>
                      <a href="https://www.kau.se/" target="_blank">
                      <img src="images/car1.jpg" alt="Reklam"  class="anonserbild">
                      </a>
-                 </div>
+                </div>
             </aside>
 
         </div>
